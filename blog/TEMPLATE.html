@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CHANGE THESE FOR EACH POST -->
+  <title>POST_TITLE | Horizon</title>
+  <meta name="description" content="POST_DESCRIPTION">
+  <link rel="canonical" href="https://horizonworks.ai/blog/POST_SLUG" />
+  <meta property="og:title" content="POST_TITLE | Horizon">
+  <meta property="og:description" content="POST_DESCRIPTION">
+  <meta property="og:url" content="https://horizonworks.ai/blog/POST_SLUG">
+  <!-- END CHANGES -->
+
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="US-TX">
+  <meta name="geo.placename" content="Austin">
+  <meta property="og:site_name" content="Horizon">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://horizonworks.ai/og-image.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="POST_TITLE | Horizon">
+  <meta name="twitter:description" content="POST_DESCRIPTION">
+  <meta name="twitter:image" content="https://horizonworks.ai/og-image.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=Caveat:wght@700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGETXJB9KS"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-HGETXJB9KS');</script>
+
+  <!-- CHANGE DATE FOR EACH POST -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "POST_TITLE",
+    "description": "POST_DESCRIPTION",
+    "author": { "@type": "Person", "name": "Garrett Garcia" },
+    "publisher": { "@type": "Organization", "name": "Horizon", "url": "https://horizonworks.ai" },
+    "datePublished": "YYYY-MM-DD",
+    "dateModified": "YYYY-MM-DD",
+    "mainEntityOfPage": "https://horizonworks.ai/blog/POST_SLUG"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://horizonworks.ai" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://horizonworks.ai/blog" },
+      { "@type": "ListItem", "position": 3, "name": "POST_TITLE" }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    :root {
+      --bg:#0B0B0B;--bg-elevated:#111111;--text:#E8E4DF;--text-secondary:#B5B0AB;
+      --accent:#E8642D;--accent-dim:rgba(232,100,45,0.08);--terra:#C4754B;
+      --sage:#8A9A7B;--sand:#D4C4A8;--border:rgba(255,255,255,0.06);
+    }
+    html { scroll-behavior:smooth; overflow-x:hidden }
+    body { font-family:'Inter',-apple-system,sans-serif; background:var(--bg); color:var(--text); font-size:17px; line-height:1.8; -webkit-font-smoothing:antialiased; overflow-x:hidden }
+    body::before { content:''; position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:200; opacity:0.03; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-repeat:repeat; background-size:256px 256px }
+
+    /* Nav */
+    nav { position:sticky; top:0; z-index:100; background:rgba(11,11,11,0.92); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:1rem 2rem }
+    .nav-inner { max-width:900px; margin:0 auto; display:flex; justify-content:space-between; align-items:center }
+    .logo-group { display:flex; align-items:center; gap:1.25rem }
+    .logo { font-family:'Caveat',cursive; font-size:1.8rem; font-weight:700; text-decoration:none; color:#F0E6D6; letter-spacing:-0.01em; line-height:1 }
+    .logo span { color:var(--accent) }
+    .logo-tagline { font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--text-secondary); letter-spacing:.1em; text-transform:uppercase; border-left:1px solid var(--border); padding-left:1.25rem; line-height:1 }
+    .nav-links { display:flex; gap:1.5rem; align-items:center }
+    .nav-links a { color:var(--text-secondary); text-decoration:none; font-size:.9rem; transition:color .2s }
+    .nav-links a:hover { color:var(--accent) }
+    .mobile-toggle { display:none; background:none; border:none; cursor:pointer; padding:.5rem }
+    .mobile-toggle span { display:block; width:22px; height:1.5px; background:var(--text); margin:5px 0; transition:all .3s }
+
+    /* Article */
+    .article-header { max-width:760px; margin:0 auto; padding:4rem 2rem 2rem; text-align:center }
+    .breadcrumb { font-size:.85rem; color:var(--text-secondary); margin-bottom:1.5rem }
+    .breadcrumb a { color:var(--accent); text-decoration:none }
+    .article-header h1 { font-family:'Syne',sans-serif; font-size:2.4rem; font-weight:700; line-height:1.2; margin-bottom:1rem; -webkit-font-smoothing:auto; text-shadow:0 0 .4px currentColor }
+    .article-meta { color:var(--text-secondary); font-size:.88rem }
+    .reading-time { color:var(--sage) }
+
+    article { max-width:720px; margin:0 auto; padding:2rem 2rem 4rem }
+    article h2 { font-family:'Syne',sans-serif; font-size:1.5rem; font-weight:600; margin:2.5rem 0 1rem; color:var(--text); -webkit-font-smoothing:auto; text-shadow:0 0 .4px currentColor }
+    article h3 { font-family:'Syne',sans-serif; font-size:1.15rem; font-weight:600; margin:2rem 0 .8rem; color:var(--sand) }
+    article p { margin-bottom:1.2rem; color:var(--text-secondary) }
+    article p:first-of-type { color:var(--text); font-size:1.05rem }
+    article strong { color:var(--text) }
+    article a { color:var(--accent); text-decoration:underline; text-underline-offset:3px }
+
+    /* Callout */
+    .callout { background:var(--accent-dim); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; padding:1.2rem 1.5rem; margin:2rem 0 }
+    .callout p { color:var(--text); margin-bottom:0 }
+
+    /* List */
+    article ul, article ol { margin:0 0 1.5rem 1.5rem; color:var(--text-secondary) }
+    article li { margin-bottom:.5rem }
+    article li strong { color:var(--text) }
+
+    /* CTA */
+    .cta-box { background:var(--bg-elevated); border:1px solid var(--border); border-radius:12px; padding:2rem; text-align:center; margin:3rem 0 }
+    .cta-box h3 { font-family:'Syne',sans-serif; font-size:1.3rem; margin-bottom:.5rem; color:var(--text) }
+    .cta-box p { color:var(--text-secondary); margin-bottom:1.2rem }
+    .btn-primary { display:inline-flex; align-items:center; gap:.5rem; background:var(--accent); color:#fff; padding:.8rem 1.6rem; border-radius:8px; text-decoration:none; font-weight:600; font-size:.95rem; transition:opacity .2s }
+    .btn-primary:hover { opacity:.88 }
+
+    /* Footer */
+    footer { max-width:900px; margin:0 auto; padding:2rem; border-top:1px solid var(--border); text-align:center; color:var(--text-secondary); font-size:.85rem }
+    footer a { color:var(--accent); text-decoration:none }
+
+    @media(max-width:768px){
+      .article-header h1 { font-size:1.8rem }
+      .article-header { padding:3rem 1.5rem 1.5rem }
+      article { padding:1.5rem 1.5rem 3rem }
+      nav { padding:.8rem 1.2rem; padding-top:env(safe-area-inset-top,0) }
+      .nav-inner { height:60px }
+      .nav-links { display:none }
+      .nav-links.open { display:flex; flex-direction:column; position:absolute; top:60px; left:0; right:0; background:var(--bg-elevated); border-bottom:1px solid var(--border); padding:1.5rem; gap:.5rem; z-index:100 }
+      .nav-links.open a { padding:.75rem 0; font-size:.9rem }
+      .mobile-toggle { display:block }
+      .logo-tagline { display:none }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo-group">
+      <a href="/" class="logo">horizon<span>.</span></a>
+      <span class="logo-tagline">Built to keep you ahead.</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="/#about">About</a>
+      <a href="/#services">Services</a>
+      <a href="/solutions">Solutions</a>
+      <a href="/#process">Process</a>
+      <a href="/blog">Blog</a>
+      <a href="/faq">FAQ</a>
+      <a href="/#contact">Let's Talk</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="var n=document.getElementById('navLinks');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="article-header">
+  <div class="breadcrumb"><a href="/">Home</a> &rarr; <a href="/blog">Blog</a> &rarr; POST_BREADCRUMB</div>
+  <h1>POST_TITLE</h1>
+  <p class="article-meta">By Garrett Garcia &middot; MONTH YEAR &middot; <span class="reading-time">X min read</span></p>
+</div>
+
+<article>
+
+<!-- WRITE YOUR CONTENT HERE -->
+
+<p>Opening paragraph goes here — make it punchy. This is the hook.</p>
+
+<h2>First Section</h2>
+
+<p>Section content here.</p>
+
+<h2>Second Section</h2>
+
+<p>More content here.</p>
+
+<div class="callout">
+  <p><strong>Key takeaway:</strong> Callout text goes here for important points you want to highlight.</p>
+</div>
+
+<!-- END CONTENT -->
+
+<div class="cta-box">
+  <h3>Ready to find out what's costing your business?</h3>
+  <p>Our AI audit gives you a prioritized roadmap with real ROI numbers — in as little as one day.</p>
+  <a href="/#contact" class="btn-primary">Get Started</a>
+</div>
+
+</article>
+
+<footer>
+  <p>&copy; 2026 <a href="/">Horizon</a>. AI automation consulting in Austin, TX.</p>
+</footer>
+
+</body>
+</html>
