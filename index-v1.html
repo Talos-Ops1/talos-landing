@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horizon — Automation consulting for businesses that don't wait</title>
   <meta name="description" content="Horizon helps businesses implement AI that actually works. Based in Austin, TX. From audits to full builds — real tools, real results.">
-  <meta name="theme-color" content="#0B0B0B">
+  <meta name="theme-color" content="#0a0c10">
   <link rel="canonical" href="https://horizonworks.ai" />
   <meta property="og:title" content="Horizon — Automation consulting for businesses that don't wait">
   <meta property="og:description" content="Horizon helps businesses implement AI that actually works. From audits to full builds — real tools, real results.">
@@ -40,23 +40,23 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0B0B0B;
-      --bg-elevated: #111111;
+      --bg: #0a0c10;
+      --bg-elevated: #1a1e28;
       --bg-surface: #161616;
-      --text: #E8E4DF;
-      --text-secondary: #B5B0AB;
-      --text-muted: #B5B0AB;
-      --accent: #E8642D;
-      --accent-dim: rgba(232, 100, 45, 0.08);
-      --accent-glow: rgba(232, 100, 45, 0.15);
-      --cream: #F0E6D6;
-      --cream-dim: rgba(240, 230, 214, 0.06);
-      --terra: #C4754B;
-      --sage: #8A9A7B;
-      --sand: #D4C4A8;
+      --text: #f0ede8;
+      --text-secondary: #8a8d96;
+      --text-muted: #8a8d96;
+      --accent: #c9956b;
+      --accent-dim: rgba(201, 149, 107, 0.08);
+      --accent-glow: rgba(201, 149, 107, 0.15);
+      --cream: #f0ede8;
+      --cream-dim: rgba(240, 237, 232, 0.06);
+      --terra: #a07248;
+      --sage: #5b8c7e;
+      --sand: #dbb08a;
       --warm-dark: #1A1512;
       --border: rgba(255, 255, 255, 0.06);
-      --border-hover: rgba(232, 100, 45, 0.25);
+      --border-hover: rgba(201, 149, 107, 0.25);
     }
 
     html {
@@ -65,7 +65,7 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: 'Sora', -apple-system, sans-serif;
       color: var(--text);
       background: var(--bg);
       line-height: 1.7;
@@ -122,7 +122,7 @@
       position: fixed;
       width: 600px; height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(232,100,45,0.06) 0%, rgba(232,100,45,0.03) 25%, rgba(232,100,45,0.01) 50%, transparent 75%);
+      background: radial-gradient(circle, rgba(201, 149, 107,0.06) 0%, rgba(201, 149, 107,0.03) 25%, rgba(201, 149, 107,0.01) 50%, transparent 75%);
       pointer-events: none;
       z-index: 0;
       transform: translate(-50%, -50%);
@@ -132,13 +132,13 @@
     /* ─── NAV ─── */
     nav {
       position: fixed; top: 0; width: 100%; z-index: 100;
-      background: rgba(11, 11, 11, 0.6);
+      background: rgba(10, 12, 16, 0.6);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       transition: all 0.4s ease;
     }
     nav.scrolled {
-      background: rgba(11, 11, 11, 0.9);
+      background: rgba(10, 12, 16, 0.9);
       border-bottom: 1px solid var(--border);
     }
     .nav-inner {
@@ -148,14 +148,23 @@
       height: 70px;
     }
     .logo {
-      font-family: 'Caveat', cursive;
-      font-size: 1.8rem; font-weight: 700;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 700;
       text-decoration: none;
       color: var(--cream);
-      letter-spacing: -0.01em;
+      letter-spacing: 0.08em;
       line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-transform: uppercase;
     }
     .logo span { color: var(--accent); }
+    .logo-img {
+      width: 32px; height: 32px;
+      border-radius: 4px;
+      object-fit: contain;
+    }
     .logo-group { display: flex; align-items: center; gap: 1.25rem; }
     .logo-tagline {
       font-family: 'JetBrains Mono', monospace;
@@ -212,9 +221,9 @@
       width: 70vw; height: 70vw;
       max-width: 900px; max-height: 900px;
       background: radial-gradient(ellipse at center,
-        rgba(232,100,45,0.12) 0%,
-        rgba(196,117,75,0.07) 30%,
-        rgba(212,196,168,0.03) 50%,
+        rgba(201, 149, 107,0.12) 0%,
+        rgba(160, 114, 72,0.07) 30%,
+        rgba(219, 176, 138,0.03) 50%,
         transparent 70%
       );
       border-radius: 50%;
@@ -282,7 +291,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
     .hero h1 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: clamp(3.2rem, 7.5vw, 6rem);
       font-weight: 800;
       line-height: 1.25;
@@ -318,7 +327,7 @@
     .btn-main {
       display: inline-flex; align-items: center; gap: 0.75rem;
       background: var(--accent);
-      color: #0B0B0B;
+      color: #0a0c10;
       padding: 0.85rem 2rem;
       border-radius: 6px;
       text-decoration: none;
@@ -416,7 +425,7 @@
       background: var(--accent);
     }
     .intro-heading {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: clamp(2rem, 3.5vw, 3rem);
       font-weight: 700;
       line-height: 1.35;
@@ -457,10 +466,10 @@
       border-radius: 50%;
       background: linear-gradient(135deg, var(--terra), var(--accent));
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-weight: 700;
       font-size: 0.85rem;
-      color: #0B0B0B;
+      color: #0a0c10;
     }
     .sig-info {
       font-size: 0.85rem;
@@ -483,7 +492,7 @@
       border-radius: 12px;
       padding: 3.5rem;
       position: relative;
-      background: linear-gradient(135deg, rgba(232,100,45,0.04) 0%, rgba(196,117,75,0.02) 50%, transparent 100%);
+      background: linear-gradient(135deg, rgba(201, 149, 107,0.04) 0%, rgba(160, 114, 72,0.02) 50%, transparent 100%);
     }
     .proof-card::before {
       content: '';
@@ -501,7 +510,7 @@
       margin-bottom: 0.5rem;
     }
     .proof-client {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: 1.15rem;
       font-weight: 700;
       color: var(--text-secondary);
@@ -511,7 +520,7 @@
       line-height: 1.35;
     }
     .proof-headline {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: clamp(1.6rem, 3.5vw, 2.4rem);
       font-weight: 800;
       letter-spacing: -0.03em;
@@ -539,7 +548,7 @@
       padding: 1.5rem;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: rgba(11,11,11,0.5);
+      background: rgba(10, 12, 16,0.5);
       transition: border-color 0.3s;
     }
     .proof-build:hover {
@@ -550,7 +559,7 @@
       margin-bottom: 0.75rem;
     }
     .proof-build h4 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: 1.05rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
@@ -574,7 +583,7 @@
       border-left: 2px solid var(--accent);
     }
     .proof-stat .val {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: 1.6rem;
       font-weight: 800;
       color: var(--accent);
@@ -608,7 +617,7 @@
       max-width: 600px;
     }
     .section-heading h2 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: clamp(1.8rem, 3vw, 2.5rem);
       font-weight: 700;
       letter-spacing: -0.03em;
@@ -646,7 +655,7 @@
     .service-row:hover::before { opacity: 1; }
     .service-row > * { position: relative; z-index: 1; }
     .service-num {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: 0.85rem;
       font-weight: 700;
       color: var(--text-muted);
@@ -654,7 +663,7 @@
     }
     .service-row:hover .service-num { color: var(--accent); }
     .service-main h3 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -691,7 +700,7 @@
       background: var(--accent);
     }
     .service-row:hover .service-arrow svg {
-      stroke: #0B0B0B;
+      stroke: #0a0c10;
       transform: translateX(2px);
     }
     .service-expand {
@@ -722,7 +731,7 @@
     .service-badge {
       display: inline-block;
       background: var(--accent);
-      color: #0B0B0B;
+      color: #0a0c10;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.6rem;
       font-weight: 600;
@@ -760,7 +769,7 @@
       color: var(--accent);
     }
     .step-num {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: 3.5rem;
       font-weight: 800;
       color: var(--border);
@@ -772,7 +781,7 @@
       padding-bottom: 0.1em;
     }
     .process-step h3 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: 1.15rem;
       font-weight: 700;
       margin-bottom: 0.75rem;
@@ -795,7 +804,7 @@
       max-width: 720px;
     }
     .personal-greeting {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: clamp(1.8rem, 3vw, 2.5rem);
       font-weight: 700;
       letter-spacing: -0.03em;
@@ -827,7 +836,7 @@
       border-top: 1px solid var(--border);
     }
     .personal-stat .val {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: 2rem;
       font-weight: 800;
       color: var(--accent);
@@ -858,7 +867,7 @@
       pointer-events: none;
     }
     .cta h2 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: clamp(2.2rem, 5vw, 3.8rem);
       font-weight: 800;
       letter-spacing: -0.04em;
@@ -888,7 +897,7 @@
       align-items: start;
     }
     .contact-left h2 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Cormorant Garamond', sans-serif;
       font-size: clamp(1.6rem, 2.5vw, 2rem);
       font-weight: 700;
       letter-spacing: -0.03em;
@@ -953,7 +962,7 @@
     .btn-submit {
       width: 100%;
       background: var(--accent);
-      color: #0B0B0B;
+      color: #0a0c10;
       padding: 0.85rem;
       border-radius: 6px;
       font-family: inherit;
@@ -1094,7 +1103,7 @@
   <nav id="mainNav">
     <div class="nav-inner">
       <div class="logo-group">
-        <a href="#" class="logo">horizon<span>.</span></a>
+        <a href="#" class="logo"><img src="/logo-nav.png" alt="Talos Ops" class="logo-img" />TALOS <span>OPS</span></a>
         <span class="logo-tagline">AI that ships.</span>
       </div>
       <div class="nav-links" id="navLinks" tabindex="-1">
@@ -1357,7 +1366,7 @@
     <div class="container">
       <div class="eyebrow fade-in">How It Works</div>
       <h2 class="section-heading fade-in d1" style="max-width:500px;">
-        <span style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;letter-spacing:-0.03em;line-height:1.4;display:inline-block;padding-bottom:0.15em;-webkit-font-smoothing:auto;text-shadow:0 0 0.4px currentColor,0 0 0.4px currentColor;">No long sales cycles.<br>No confusing proposals.</span>
+        <span style="font-family:'Cormorant Garamond',sans-serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;letter-spacing:-0.03em;line-height:1.4;display:inline-block;padding-bottom:0.15em;-webkit-font-smoothing:auto;text-shadow:0 0 0.4px currentColor,0 0 0.4px currentColor;">No long sales cycles.<br>No confusing proposals.</span>
       </h2>
       <div class="process-grid">
         <div class="process-step fade-in d1">
@@ -1494,7 +1503,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <a href="#" class="logo">horizon<span>.</span></a>
+    <a href="#" class="logo"><img src="/logo-nav.png" alt="Talos Ops" class="logo-img" />TALOS <span>OPS</span></a>
     <p>&copy; 2026 Horizon. All rights reserved.</p>
     <a href="https://portal.horizonworks.ai" class="portal-link" target="_blank" rel="noopener">Client Portal &rarr;</a>
   </footer>
