@@ -2,6 +2,8 @@
   "rewrites": [
     { "source": "/solutions", "destination": "/solutions.html" },
     { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/blog/what-is-an-ai-audit", "destination": "/blog/what-is-an-ai-audit.html" },
     { "source": "/blog/how-much-does-ai-consulting-cost", "destination": "/blog/how-much-does-ai-consulting-cost.html" },
